@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Todo(models.Model):
-    title=models.CharField(default='', max_length=300)
+    title=models.CharField(default='', max_length=300,)
     content=models.TextField(default='')
     priority=models.IntegerField(default=1)
     isdone= models.BooleanField(default=False)
